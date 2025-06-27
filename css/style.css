@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family:'inter';
+    src:url('../asset/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal italic;
+    font-display: swap;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'inter', sans-serif;
+       background-color:  hsl(30, 38%, 92%);
+       /* padding: 30px; */
+}
+
+.img1{
+    width:300px ;
+    height: auto;
+    border-bottom-left-radius:8px ;
+    border-top-left-radius:8px ;
+    
+}
+
+.img2{
+    width: 300px;
+    display: none;
+}
+
+.container{
+    display: flex;
+    
+}
+
+.main{
+    width: 300px;
+    padding: 25px;
+    background-color: white;
+     border-bottom-right-radius:8px ;
+    border-top-right-radius:8px ;
+    height:450px ;
+   
+}
+
+
+.main .phead{
+    color:hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 18px;
+}
+
+h2{
+    margin-bottom:28px ;
+    font-size: 2rem;
+    line-height: 32px;
+
+}
+
+.pbody{
+  color: hsl(228, 12%, 48%); 
+  margin-bottom:28px ; 
+  line-height: 25px;
+}
+
+.price{
+    display: flex;
+    gap: 1.5em;
+    margin-bottom:px ;
+    position: relative;
+}
+
+
+.price h2{
+color:hsl(158, 36%, 37%) ;
+}
+.price p{
+    margin-top: 5.5px;
+    color:  hsl(228, 12%, 48%);
+}
+
+button{
+    width:100%;
+    height: 48px;
+   background-color:hsl(158, 36%, 37%);
+   border: none;
+   font-weight: 600;
+   color: white;
+   border-radius: 10px;
+   font-size: 17px;
+   transition: all .5sec ease;
+}
+
+.img3{
+    margin-right: 4px;
+    height: 17px;
+
+}
+
+button:hover{
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+}
+
+@media (max-width:600px){
+   .img1{
+    display: none;
+   } 
+
+   .img2{
+    display: block;
+    width: 380px;
+     border-top-right-radius:8px ;
+      border-top-left-radius:8px ;
+   }
+
+   .container{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .main{
+     border-top-right-radius:0px ;
+      border-bottom-right-radius:8px ;
+       border-bottom-left-radius:8px ;
+     width: 380px;
+     height: 400px;
+   }
+}
